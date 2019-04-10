@@ -14,7 +14,6 @@ def randomcolor():
     return random.choice(colors)
 
 
-
 def add(event):
     _, currow = buttonsFrame.size()
     nextrow = currow + 1
@@ -33,14 +32,14 @@ TKroot.title("Hello")
 TKroot.geometry("200x400")
 
 root = Frame(TKroot)
-root.place(relx=0, rely=0, relheight=0.5, relwidth=1)
+root.pack()
 root.columnconfigure(0, weight=1)
 root.columnconfigure(1, weight=1)
 root.rowconfigure(0, weight=1)
 root.rowconfigure(1, weight=1)
 
 buttonsFrame = Frame(TKroot)
-buttonsFrame.place(relx=0, rely=0.4, relheight=0.5, relwidth=1)
+buttonsFrame.pack()
 buttonsFrame.columnconfigure(0, weight=1)
 buttonsFrame.columnconfigure(1, weight=1)
 
