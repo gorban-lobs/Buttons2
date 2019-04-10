@@ -32,14 +32,14 @@ TKroot.title("Hello")
 TKroot.geometry("200x400")
 
 root = Frame(TKroot)
-root.pack()
+root.pack(fill=X)
 root.columnconfigure(0, weight=1)
 root.columnconfigure(1, weight=1)
 root.rowconfigure(0, weight=1)
 root.rowconfigure(1, weight=1)
 
 buttonsFrame = Frame(TKroot)
-buttonsFrame.pack()
+buttonsFrame.pack(fill=BOTH)
 buttonsFrame.columnconfigure(0, weight=1)
 buttonsFrame.columnconfigure(1, weight=1)
 
